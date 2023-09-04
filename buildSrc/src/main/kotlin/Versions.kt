@@ -7,6 +7,7 @@ object Versions {
     const val kotlinVersion = "1.8.20"
     const val appCompatVersion = "1.6.1"
     const val coreKtxVersion = "1.10.1"
+    const val fragmentsVersion = "1.6.1"
 
     // Design
     const val constraintLayoutVersion = "2.1.4"
@@ -18,4 +19,7 @@ object Versions {
 
     // Dagger
     const val dagger = "2.46"
+
+    // Navigation
+    const val ciceroneVersion = "7.1"
 }
