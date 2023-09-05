@@ -1,6 +1,6 @@
 package az.kapitalbank.birbankinvest.di.splash
 
-import az.kapitalbank.birbankinvest.MainActivity
+import az.kapitalbank.birbankinvest.presentation.MainActivity
 import az.kapitalbank.birbankinvest.di.MediatorsModule
 import az.kapitalbank.birbankinvest.presentation.SplashFragment
 import dagger.Component

@@ -1,8 +1,9 @@
-package az.kapitalbank.birbankinvest
+package az.kapitalbank.birbankinvest.presentation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
+import az.kapitalbank.birbankinvest.R
 import az.kapitalbank.birbankinvest.presentation.SplashRoutingScreens.getStartSplashScreen
 import az.kapitalbank.birbankinvest.component_manager.HasComponent
 import az.kapitalbank.birbankinvest.component_manager.XInjectionManager
