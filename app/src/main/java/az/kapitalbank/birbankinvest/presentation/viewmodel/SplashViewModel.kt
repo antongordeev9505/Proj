@@ -16,7 +16,7 @@ class SplashViewModel @Inject constructor(
     private val router: Router
 ) : ViewModel() {
 
-    fun navigateFromSplashScreen(activity: Activity) {
+    fun onViewCreated(activity: Activity) {
         viewModelScope.launch {
             //TODO: delete delay in the future
             delay(3000L)

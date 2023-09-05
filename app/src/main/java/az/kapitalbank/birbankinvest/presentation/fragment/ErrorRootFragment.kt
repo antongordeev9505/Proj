@@ -1,7 +1,11 @@
 package az.kapitalbank.birbankinvest.presentation.fragment
 
-import az.kapitalbank.birbankinvest.core.BaseFragment
+import androidx.fragment.app.Fragment
+import az.kapitalbank.birbankinvest.R
+import az.kapitalbank.birbankinvest.core.viewBinding
 import az.kapitalbank.birbankinvest.databinding.FragmentErrorRootBinding
 
-class ErrorRootFragment : BaseFragment<FragmentErrorRootBinding>(FragmentErrorRootBinding::inflate) {
+class ErrorRootFragment : Fragment(R.layout.fragment_error_root) {
+
+    private val binding by viewBinding(FragmentErrorRootBinding::bind)
 }
