@@ -4,7 +4,8 @@
     android:id="@+id/splash"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".presentation.SplashFragment">
+    tools:context=".presentation.SplashFragment"
+    android:background="@color/black">
 
     <TextView
         android:layout_width="match_parent"
