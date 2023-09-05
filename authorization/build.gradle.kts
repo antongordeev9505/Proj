@@ -6,6 +6,8 @@ plugins {
 
 dependencies {
     implementation(project(Modules.componentManager))
+    //api
+    implementation(project(Modules.authorization_api))
     //deps
     implementation(Libraries.appCompat)
     implementation(Libraries.coreKtx)

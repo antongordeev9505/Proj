@@ -11,10 +11,10 @@ class AuthorizationActivity : AppCompatActivity(), HasComponent<AuthorizationCom
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_authorization)
         XInjectionManager
             .bindComponent(this)
             .inject(this)
+        setContentView(R.layout.activity_authorization)
     }
 
     override fun getComponent(): AuthorizationComponent {

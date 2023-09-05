@@ -3,6 +3,7 @@ object Libraries {
     // Core
     const val coreKtx = "androidx.core:core-ktx:${Versions.coreKtxVersion}"
     const val appCompat = "androidx.appcompat:appcompat:${Versions.appCompatVersion}"
+    const val fragments = "androidx.fragment:fragment-ktx:${Versions.fragmentsVersion}"
 
     // Design
     const val constraintLayout =
@@ -16,4 +17,7 @@ object Libraries {
     // Dagger
     const val implementationDagger = "com.google.dagger:dagger:${Versions.dagger}"
     const val kaptDagger = "com.google.dagger:dagger-compiler:${Versions.dagger}"
+
+    //Navigation
+    const val cicerone = "com.github.terrakok:cicerone:${Versions.ciceroneVersion}"
 }
