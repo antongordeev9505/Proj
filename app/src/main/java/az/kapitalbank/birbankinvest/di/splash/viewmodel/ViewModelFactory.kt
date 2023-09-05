@@ -1,4 +1,4 @@
-package az.kapitalbank.birbankinvest.di.viewmodel
+package az.kapitalbank.birbankinvest.di.splash.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider

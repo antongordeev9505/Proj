@@ -10,7 +10,7 @@ import androidx.lifecycle.ViewModelProvider
 import az.kapitalbank.birbankinvest.R
 import az.kapitalbank.birbankinvest.component_manager.XInjectionManager
 import az.kapitalbank.birbankinvest.databinding.FragmentSplashBinding
-import az.kapitalbank.birbankinvest.di.ApplicationComponent
+import az.kapitalbank.birbankinvest.di.splash.SplashComponent
 import javax.inject.Inject
 
 class SplashFragment : Fragment(R.layout.fragment_splash) {
@@ -27,7 +27,7 @@ class SplashFragment : Fragment(R.layout.fragment_splash) {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         XInjectionManager
-            .findComponent<ApplicationComponent>()
+            .findComponent<SplashComponent>()
             .inject(this)
     }
 
@@ -41,7 +41,7 @@ class SplashFragment : Fragment(R.layout.fragment_splash) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        // TODO: Put this piece of code to the appropriate place (checking some parametres and navigation
+        // TODO: Put this piece of code to the appropriate place (checking some parametres and navigation)
         viewModel.navigateFromSplashScreen(requireActivity())
     }
 

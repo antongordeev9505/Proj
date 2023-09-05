@@ -1,7 +1,5 @@
-package az.kapitalbank.birbankinvest
+package az.kapitalbank.birbankinvest.presentation
 
-import az.kapitalbank.birbankinvest.presentation.ErrorRootFragment
-import az.kapitalbank.birbankinvest.presentation.SplashFragment
 import com.github.terrakok.cicerone.androidx.FragmentScreen
 
 object SplashRoutingScreens {
