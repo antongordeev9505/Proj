@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import az.kapitalbank.birbankinvest.R
-import az.kapitalbank.birbankinvest.presentation.SplashRoutingScreens.getStartSplashScreen
+import az.kapitalbank.birbankinvest.presentation.routing.SplashRoutingScreens.getStartSplashScreen
 import az.kapitalbank.birbankinvest.component_manager.HasComponent
 import az.kapitalbank.birbankinvest.component_manager.XInjectionManager
 import az.kapitalbank.birbankinvest.di.splash.SplashComponent
@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity(), HasComponent<SplashComponent> {
 
     @Inject
     lateinit var router: Router
-    private lateinit var navigator: Navigator
+    private var navigator: Navigator = AppNavigator(this, R.id.fragment_container, supportFragmentManager)
 
     override fun getComponent() = SplashComponent.Initializer.init()
 
@@ -30,11 +30,8 @@ class MainActivity : AppCompatActivity(), HasComponent<SplashComponent> {
         XInjectionManager
             .bindComponent(this)
             .inject(this)
-        navigator = AppNavigator(this, R.id.fragment_container, supportFragmentManager)
-
         installSplashScreen()
         setContentView(R.layout.activity_main)
-
         if (savedInstanceState == null) {
             router.navigateTo(getStartSplashScreen())
         }
@@ -46,7 +43,7 @@ class MainActivity : AppCompatActivity(), HasComponent<SplashComponent> {
     }
 
     public override fun onPause() {
-        super.onPause()
         navigatorHolder.removeNavigator()
+        super.onPause()
     }
 }

@@ -1,9 +1,9 @@
-package az.kapitalbank.birbankinvest.presentation
+package az.kapitalbank.birbankinvest.presentation.viewmodel
 
 import android.app.Activity
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import az.kapitalbank.birbankinvest.presentation.SplashRoutingScreens.getRootErrorScreen
+import az.kapitalbank.birbankinvest.presentation.routing.SplashRoutingScreens.getRootErrorScreen
 import az.kapitalbank.birbankinvest.authorization_api.AuthorizationMediator
 import az.kapitalbank.birbankinvest.utils.isRooted
 import com.github.terrakok.cicerone.Router

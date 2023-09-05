@@ -1,22 +1,17 @@
-package az.kapitalbank.birbankinvest.presentation
+package az.kapitalbank.birbankinvest.presentation.fragment
 
 import android.os.Bundle
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
-import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.ViewModelProvider
-import az.kapitalbank.birbankinvest.R
 import az.kapitalbank.birbankinvest.component_manager.XInjectionManager
+import az.kapitalbank.birbankinvest.core.BaseFragment
 import az.kapitalbank.birbankinvest.databinding.FragmentSplashBinding
 import az.kapitalbank.birbankinvest.di.splash.SplashComponent
+import az.kapitalbank.birbankinvest.presentation.viewmodel.SplashViewModel
 import javax.inject.Inject
 
-class SplashFragment : Fragment(R.layout.fragment_splash) {
-
-    private var _binding: FragmentSplashBinding? = null
-    private val binding get() = _binding!!
+class SplashFragment : BaseFragment<FragmentSplashBinding>(FragmentSplashBinding::inflate) {
 
     @Inject
     lateinit var viewModelFactory: ViewModelProvider.Factory
@@ -31,22 +26,9 @@ class SplashFragment : Fragment(R.layout.fragment_splash) {
             .inject(this)
     }
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        _binding = FragmentSplashBinding.inflate(inflater, container, false)
-        return binding.root
-    }
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         // TODO: Put this piece of code to the appropriate place (checking some parametres and navigation)
         viewModel.navigateFromSplashScreen(requireActivity())
-    }
-
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
     }
 }

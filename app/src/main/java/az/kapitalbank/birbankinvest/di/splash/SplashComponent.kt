@@ -1,11 +1,18 @@
 package az.kapitalbank.birbankinvest.di.splash
 
-import az.kapitalbank.birbankinvest.presentation.MainActivity
+import az.kapitalbank.birbankinvest.core.di.FeatureScope
 import az.kapitalbank.birbankinvest.di.MediatorsModule
-import az.kapitalbank.birbankinvest.presentation.SplashFragment
+import az.kapitalbank.birbankinvest.di.splash.viewmodel.SplashViewModelModule
+import az.kapitalbank.birbankinvest.presentation.MainActivity
+import az.kapitalbank.birbankinvest.presentation.fragment.SplashFragment
 import dagger.Component
 
-@Component(modules = [MediatorsModule::class, SplashModule::class])
+@Component(modules = [
+    MediatorsModule::class,
+    SplashViewModelModule::class,
+    ScreenNavigationModule::class
+])
+@FeatureScope
 interface SplashComponent {
 
     fun inject(activity: MainActivity)
