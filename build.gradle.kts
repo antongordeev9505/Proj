@@ -11,7 +11,6 @@ subprojects {
             compileSdkVersion(ConfigurationData.compileSdk)
 
             defaultConfig {
-                namespace = ConfigurationData.namespace
                 minSdk = ConfigurationData.minSdk
                 targetSdk = ConfigurationData.targetSdk
                 versionCode = ConfigurationData.versionCode

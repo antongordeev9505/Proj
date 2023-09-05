@@ -4,6 +4,12 @@ plugins {
     id("kotlin-kapt")
 }
 
+android {
+    defaultConfig {
+        namespace = ConfigurationData.namespace
+    }
+}
+
 dependencies {
     implementation(project(Modules.componentManager))
     //api
