@@ -5,6 +5,9 @@ plugins {
 }
 
 android {
+    defaultConfig {
+        namespace = ConfigurationData.namespace
+    }
     buildFeatures {
         viewBinding = true
     }
