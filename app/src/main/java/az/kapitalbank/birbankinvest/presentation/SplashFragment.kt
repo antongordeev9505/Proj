@@ -11,7 +11,6 @@ import az.kapitalbank.birbankinvest.R
 import az.kapitalbank.birbankinvest.component_manager.XInjectionManager
 import az.kapitalbank.birbankinvest.databinding.FragmentSplashBinding
 import az.kapitalbank.birbankinvest.di.ApplicationComponent
-import az.kapitalbank.birbankinvest.utils.isRooted
 import javax.inject.Inject
 
 class SplashFragment : Fragment(R.layout.fragment_splash) {
@@ -42,12 +41,8 @@ class SplashFragment : Fragment(R.layout.fragment_splash) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        if (isRooted(requireContext())) {
-            // TODO: navigate to error screen
-        }
-
-        // TODO: delete in the future, it is example of navigation
-        viewModel.navigateToAuthorization(requireActivity())
+        // TODO: Put this piece of code to the appropriate place (checking some parametres and navigation
+        viewModel.navigateFromSplashScreen(requireActivity())
     }
 
     override fun onDestroyView() {
