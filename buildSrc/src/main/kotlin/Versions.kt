@@ -22,4 +22,7 @@ object Versions {
 
     // Navigation
     const val ciceroneVersion = "7.1"
+
+    // Desugar Version
+    const val desugaringVersion = "2.0.3"
 }
