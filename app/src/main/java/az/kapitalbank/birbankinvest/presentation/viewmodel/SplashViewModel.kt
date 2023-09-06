@@ -21,7 +21,7 @@ class SplashViewModel @Inject constructor(
             //TODO: delete delay in the future
             delay(3000L)
             if (isRooted(activity)) {
-                router.navigateTo(getRootErrorScreen())
+                router.newRootScreen(getRootErrorScreen())
             } else {
                 mediator.navigateToAuthorizationFeature(activity)
             }
