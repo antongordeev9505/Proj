@@ -32,11 +32,12 @@
 
     <TextView
         android:id="@+id/title_root_error"
+        style="@style/ErrorTitleTextStyle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:gravity="center"
         android:layout_marginHorizontal="30dp"
         android:layout_marginTop="20dp"
+        android:gravity="center"
         android:text="@string/root_error_screen_title"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -44,11 +45,12 @@
 
     <TextView
         android:id="@+id/subtitle_root_error"
+        style="@style/ErrorSubtitleTextStyle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:gravity="center"
         android:layout_marginHorizontal="30dp"
         android:layout_marginTop="8dp"
+        android:gravity="center"
         android:text="@string/root_error_screen_subtitle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
