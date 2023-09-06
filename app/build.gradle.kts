@@ -6,6 +6,7 @@ plugins {
 
 android {
     defaultConfig {
+        namespace = ConfigurationData.namespace
         applicationId = ConfigurationData.applicationId
     }
     buildFeatures {
