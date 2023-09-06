@@ -1,4 +1,4 @@
-package az.kapitalbank.birbankinvest.core.di
+package az.kapitalbank.birbankinvest.core_utils.di
 
 import javax.inject.Scope
 

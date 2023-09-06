@@ -17,7 +17,7 @@ dependencies {
     implementation(project(Modules.componentManager))
     implementation(project(Modules.authorization))
     implementation(project(Modules.authorization_api))
-    implementation(project(Modules.core))
+    implementation(project(Modules.core_utils))
     // Core
     implementation(Libraries.appCompat)
     implementation(Libraries.coreKtx)

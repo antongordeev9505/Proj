@@ -2,7 +2,7 @@ package az.kapitalbank.birbankinvest.di.splash.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import az.kapitalbank.birbankinvest.core.di.FeatureScope
+import az.kapitalbank.birbankinvest.core_utils.di.FeatureScope
 import az.kapitalbank.birbankinvest.presentation.viewmodel.SplashViewModel
 import dagger.Binds
 import dagger.Module

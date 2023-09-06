@@ -1,4 +1,4 @@
-package az.kapitalbank.birbankinvest.core
+package az.kapitalbank.birbankinvest.core_utils
 
 import android.view.View
 import androidx.fragment.app.Fragment

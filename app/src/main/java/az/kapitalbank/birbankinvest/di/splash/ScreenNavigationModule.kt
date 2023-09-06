@@ -1,6 +1,6 @@
 package az.kapitalbank.birbankinvest.di.splash
 
-import az.kapitalbank.birbankinvest.core.di.FeatureScope
+import az.kapitalbank.birbankinvest.core_utils.di.FeatureScope
 import com.github.terrakok.cicerone.Cicerone
 import com.github.terrakok.cicerone.NavigatorHolder
 import com.github.terrakok.cicerone.Router

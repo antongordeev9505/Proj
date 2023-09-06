@@ -7,7 +7,7 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.ViewModelProvider
 import az.kapitalbank.birbankinvest.R
 import az.kapitalbank.birbankinvest.component_manager.XInjectionManager
-import az.kapitalbank.birbankinvest.core.viewBinding
+import az.kapitalbank.birbankinvest.core_utils.viewBinding
 import az.kapitalbank.birbankinvest.databinding.FragmentSplashBinding
 import az.kapitalbank.birbankinvest.di.splash.SplashComponent
 import az.kapitalbank.birbankinvest.presentation.viewmodel.SplashViewModel
