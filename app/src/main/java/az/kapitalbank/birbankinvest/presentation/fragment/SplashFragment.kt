@@ -15,6 +15,10 @@ import javax.inject.Inject
 
 class SplashFragment : Fragment(R.layout.fragment_splash) {
 
+    companion object {
+        fun getNewInstance() = SplashFragment()
+    }
+
     private val binding by viewBinding(FragmentSplashBinding::bind)
 
     @Inject

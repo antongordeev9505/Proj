@@ -7,5 +7,9 @@ import az.kapitalbank.birbankinvest.databinding.FragmentErrorRootBinding
 
 class ErrorRootFragment : Fragment(R.layout.fragment_error_root) {
 
+    companion object {
+        fun getNewInstance() = ErrorRootFragment()
+    }
+
     private val binding by viewBinding(FragmentErrorRootBinding::bind)
 }
