@@ -18,3 +18,7 @@ include(":component_manager")
 include(":authorization")
 include(":authorization_api")
 include(":core_utils")
+include(":android-design-system")
+
+include(":design-system-demo-app")
+project(":design-system-demo-app").projectDir = file("android-design-system/design-system-demo-app")

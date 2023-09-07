@@ -1,0 +1,3 @@
+[submodule "android-design-system"]
+	path = android-design-system
+	url = https://bitbucket.kapitalbank.az/scm/bim/android-design-system.git

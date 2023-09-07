@@ -20,4 +20,7 @@ object Libraries {
 
     //Navigation
     const val cicerone = "com.github.terrakok:cicerone:${Versions.ciceroneVersion}"
+
+    //Desugaring
+    const val desugaring = "com.android.tools:desugar_jdk_libs:${Versions.desugaringVersion}"
 }
