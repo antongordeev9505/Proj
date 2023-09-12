@@ -26,7 +26,7 @@ dependencies {
     implementation(project(Modules.core_utils))
 
     //design-system
-    implementation(project(Modules.design_system))
+//    implementation(project(Modules.design_system))
 
     // Core
     implementation(Libraries.appCompat)
