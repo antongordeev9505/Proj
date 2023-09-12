@@ -1,18 +1,19 @@
 package az.kapitalbank.birbankinvest.presentation
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import az.kapitalbank.birbankinvest.R
-import az.kapitalbank.birbankinvest.presentation.routing.SplashRoutingScreens.getStartSplashScreen
 import az.kapitalbank.birbankinvest.component_manager.HasComponent
 import az.kapitalbank.birbankinvest.component_manager.XInjectionManager
 import az.kapitalbank.birbankinvest.di.splash.SplashComponent
+import az.kapitalbank.birbankinvest.presentation.routing.SplashRoutingScreens.getStartSplashScreen
 import com.github.terrakok.cicerone.Navigator
 import com.github.terrakok.cicerone.NavigatorHolder
 import com.github.terrakok.cicerone.Router
 import com.github.terrakok.cicerone.androidx.AppNavigator
 import javax.inject.Inject
+
 
 class MainActivity : AppCompatActivity(), HasComponent<SplashComponent> {
 
